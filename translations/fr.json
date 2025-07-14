@@ -1,0 +1,68 @@
+{
+  "dishesList": {
+    "borsch": {
+      "name": "Bortsch",
+      "description": "Soupe traditionnelle ukrainienne aux betteraves avec une saveur riche et une couleur vibrante."
+    },
+    "plov": {
+      "name": "Plov",
+      "description": "Plat de riz d'Asie centrale avec viande tendre et épices aromatiques."
+    },
+    "olivier": {
+      "name": "Salade Olivier",
+      "description": "Salade russe classique avec pommes de terre, légumes, œufs et mayonnaise."
+    },
+    "pasta": {
+      "name": "Pâtes à la Carbonara",
+      "description": "Pâtes italiennes classiques avec œufs, fromage et pancetta."
+    },
+    "caesar": {
+      "name": "Salade César",
+      "description": "Laitue romaine fraîche avec vinaigrette crémeuse et croûtons croustillants."
+    },
+    "puree": {
+      "name": "Purée de Légumes",
+      "description": "Purée de légumes onctueuse et crémeuse avec herbes et épices."
+    },
+    "chicken_potato": {
+      "name": "Poulet aux Pommes de Terre",
+      "description": "Blanc de poulet tendre servi avec pommes de terre rôties et herbes."
+    },
+    "buckwheat_veggies": {
+      "name": "Sarrasin aux Légumes",
+      "description": "Sarrasin nutritif avec légumes sautés et épices aromatiques."
+    }
+  },
+  "ingredients": {
+    "beet": "Betterave",
+    "cabbage": "Chou",
+    "potato": "Pomme de terre",
+    "carrot": "Carotte",
+    "onion": "Oignon",
+    "meat": "Viande",
+    "tomato_paste": "Concentré de tomates",
+    "rice": "Riz",
+    "garlic": "Ail",
+    "spices": "Épices",
+    "eggs": "Œufs",
+    "peas": "Pois",
+    "sausage": "Saucisse",
+    "cucumber": "Concombre",
+    "mayonnaise": "Mayonnaise",
+    "tomato_sauce": "Sauce tomate",
+    "cheese": "Fromage",
+    "basil": "Basilic",
+    "chicken": "Poulet",
+    "lettuce": "Laitue",
+    "croutons": "Croûtons",
+    "parmesan": "Parmesan",
+    "caesar_sauce": "Sauce César",
+    "vegetables": "Légumes",
+    "cream": "Crème",
+    "salt": "Sel",
+    "pepper": "Poivre",
+    "oil": "Huile",
+    "buckwheat": "Sarrasin",
+    "bell_pepper": "Poivron"
+  }
+}

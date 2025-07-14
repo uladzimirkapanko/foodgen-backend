@@ -1,0 +1,68 @@
+{
+  "dishesList": {
+    "borsch": {
+      "name": "Borsch",
+      "description": "Zuppa tradizionale ucraina di barbabietole con sapore ricco e colore vibrante."
+    },
+    "plov": {
+      "name": "Plov",
+      "description": "Piatto di riso dell'Asia centrale con carne tenera e spezie aromatiche."
+    },
+    "olivier": {
+      "name": "Insalata Olivier",
+      "description": "Insalata russa classica con patate, verdure, uova e maionese."
+    },
+    "pasta": {
+      "name": "Pasta alla Carbonara",
+      "description": "Pasta italiana classica con uova, formaggio e pancetta."
+    },
+    "caesar": {
+      "name": "Insalata Cesare",
+      "description": "Lattuga romana fresca con condimento cremoso e crostini croccanti."
+    },
+    "puree": {
+      "name": "Purè di Verdure",
+      "description": "Purè di verdure cremoso e vellutato con erbe e spezie."
+    },
+    "chicken_potato": {
+      "name": "Pollo con Patate",
+      "description": "Petto di pollo tenero servito con patate arrostite ed erbe."
+    },
+    "buckwheat_veggies": {
+      "name": "Grano Saraceno con Verdure",
+      "description": "Grano saraceno nutriente con verdure saltate e spezie aromatiche."
+    }
+  },
+  "ingredients": {
+    "beet": "Barbabietola",
+    "cabbage": "Cavolo",
+    "potato": "Patata",
+    "carrot": "Carota",
+    "onion": "Cipolla",
+    "meat": "Carne",
+    "tomato_paste": "Concentrato di pomodoro",
+    "rice": "Riso",
+    "garlic": "Aglio",
+    "spices": "Spezie",
+    "eggs": "Uova",
+    "peas": "Piselli",
+    "sausage": "Salsiccia",
+    "cucumber": "Cetriolo",
+    "mayonnaise": "Maionese",
+    "tomato_sauce": "Salsa di pomodoro",
+    "cheese": "Formaggio",
+    "basil": "Basilico",
+    "chicken": "Pollo",
+    "lettuce": "Lattuga",
+    "croutons": "Crostini",
+    "parmesan": "Parmigiano",
+    "caesar_sauce": "Salsa Caesar",
+    "vegetables": "Verdure",
+    "cream": "Panna",
+    "salt": "Sale",
+    "pepper": "Pepe",
+    "oil": "Olio",
+    "buckwheat": "Grano saraceno",
+    "bell_pepper": "Peperone"
+  }
+}

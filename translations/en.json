@@ -1,0 +1,68 @@
+{
+  "dishesList": {
+    "borsch": {
+      "name": "Borscht",
+      "description": "Traditional Ukrainian beet soup with rich flavor and vibrant color."
+    },
+    "plov": {
+      "name": "Plov",
+      "description": "Central Asian rice dish with tender meat and aromatic spices."
+    },
+    "olivier": {
+      "name": "Olivier Salad",
+      "description": "Classic Russian salad with potatoes, vegetables, eggs, and mayonnaise."
+    },
+    "pasta": {
+      "name": "Pasta Carbonara",
+      "description": "Classic Italian pasta with eggs, cheese, and pancetta."
+    },
+    "caesar": {
+      "name": "Caesar Salad",
+      "description": "Fresh romaine lettuce with creamy dressing and crispy croutons."
+    },
+    "puree": {
+      "name": "Vegetable Puree",
+      "description": "Smooth and creamy vegetable puree with herbs and spices."
+    },
+    "chicken_potato": {
+      "name": "Chicken with Potatoes",
+      "description": "Tender chicken breast served with roasted potatoes and herbs."
+    },
+    "buckwheat_veggies": {
+      "name": "Buckwheat with Vegetables",
+      "description": "Nutritious buckwheat with sautéed vegetables and aromatic spices."
+    }
+  },
+  "ingredients": {
+    "beet": "Beet",
+    "cabbage": "Cabbage",
+    "potato": "Potato",
+    "carrot": "Carrot",
+    "onion": "Onion",
+    "meat": "Meat",
+    "tomato_paste": "Tomato Paste",
+    "rice": "Rice",
+    "garlic": "Garlic",
+    "spices": "Spices",
+    "eggs": "Eggs",
+    "peas": "Peas",
+    "sausage": "Sausage",
+    "cucumber": "Cucumber",
+    "mayonnaise": "Mayonnaise",
+    "tomato_sauce": "Tomato Sauce",
+    "cheese": "Cheese",
+    "basil": "Basil",
+    "chicken": "Chicken",
+    "lettuce": "Lettuce",
+    "croutons": "Croutons",
+    "parmesan": "Parmesan",
+    "caesar_sauce": "Caesar Sauce",
+    "vegetables": "Vegetables",
+    "cream": "Cream",
+    "salt": "Salt",
+    "pepper": "Pepper",
+    "oil": "Oil",
+    "buckwheat": "Buckwheat",
+    "bell_pepper": "Bell Pepper"
+  }
+}

@@ -4,6 +4,7 @@ const bcrypt = require('bcryptjs');
 const cors = require('cors');
 const path = require('path');
 const bodyParser = require('body-parser');
+const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || '4000';
@@ -13,7 +14,6 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use((req, res, next) => {
-    console.log(`--> ${req.method} ${req.url} | body:`, req.body, '| headers:', req.headers);
     next();
 });
 
@@ -31,7 +31,6 @@ const dishes = [
 
 app.post('/register', async (req, res) => {
     const { email, password } = req.body;
-    console.log('POST /register', { email });
     if (!email || !password) return res.status(400).json({ message: 'Email and password are required' });
     if (users.find(u => u.email === email)) return res.status(409).json({ message: 'User already exists' });
     const hash = await bcrypt.hash(password, 10);
@@ -42,7 +41,6 @@ app.post('/register', async (req, res) => {
 
 app.post('/login', async (req, res) => {
     const { email, password } = req.body;
-    console.log('POST /login', { email });
     const user = users.find(u => u.email === email);
     if (!user) {
         console.log('User not found:', email);
@@ -60,7 +58,6 @@ app.post('/login', async (req, res) => {
 
 app.post('/login-social', (req, res) => {
     const { email } = req.body;
-    console.log('POST /login-social', { email });
     if (!email) return res.status(400).json({ message: 'Email is required' });
     let user = users.find(u => u.email === email);
     if (!user) {
@@ -90,13 +87,40 @@ function authMiddleware(req, res, next) {
     }
 }
 
+function getTranslations(lang) {
+    const defaultLang = 'en';
+    let translations = {};
+    try {
+        const filePath = path.join(__dirname, 'translations', `${lang}.json`);
+        if (fs.existsSync(filePath)) {
+            translations = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+        } else {
+            const defaultPath = path.join(__dirname, 'translations', `${defaultLang}.json`);
+            translations = JSON.parse(fs.readFileSync(defaultPath, 'utf-8'));
+        }
+    } catch (e) {
+        translations = {};
+    }
+    return translations;
+}
+
 app.get('/dishes', authMiddleware, (req, res) => {
-    console.log('GET /dishes for user:', req.user.email);
-    const dishesWithUrl = dishes.map(dish => ({
-        ...dish,
-        imageUrl: `https://${req.get('host')}/images/${dish.imageName}`
-    }));
-    res.json(dishesWithUrl);
+    const lang = req.query.lang || 'en';
+    const translations = getTranslations(lang);
+    console.log('translations', translations)
+    const dishesWithTranslation = dishes.map(dish => {
+        const name = translations.dishesList?.[dish.nameKey]?.name || dish.nameKey;
+        const description = translations.dishesList?.[dish.nameKey]?.description || '';
+        const translatedIngredients = dish.ingredients.map(ing => translations.ingredients?.[ing] || ing);
+        return {
+            ...dish,
+            name,
+            description,
+            ingredientsTranslated: translatedIngredients,
+            imageUrl: `https://${req.get('host')}/images/${dish.imageName}`
+        };
+    });
+    res.json(dishesWithTranslation);
 });
 
 app.get('/dishes/:id', authMiddleware, (req, res) => {
