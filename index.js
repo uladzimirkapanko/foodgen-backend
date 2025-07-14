@@ -17,9 +17,7 @@ app.use((req, res, next) => {
     next();
 });
 
-// In-memory users and dishes
 const users = [];
-// Обновлённый массив блюд с nameKey для локализации
 const dishes = [
     { id: 1, nameKey: 'borsch', imageName: 'borscht.jpg', ingredients: ['beet', 'cabbage', 'potato', 'carrot', 'onion', 'meat', 'tomato_paste'] },
     { id: 2, nameKey: 'plov', imageName: 'plov.jpeg', ingredients: ['rice', 'meat', 'carrot', 'onion', 'garlic', 'spices'] },
@@ -31,42 +29,39 @@ const dishes = [
     { id: 8, nameKey: 'buckwheat_veggies', imageName: 'plate.jpg', ingredients: ['buckwheat', 'carrot', 'onion', 'bell_pepper', 'spices'] }
 ];
 
-// Регистрация
 app.post('/register', async (req, res) => {
     const { email, password } = req.body;
     console.log('POST /register', { email });
-    if (!email || !password) return res.status(400).json({ message: 'Email и пароль обязательны' });
-    if (users.find(u => u.email === email)) return res.status(409).json({ message: 'Пользователь уже существует' });
+    if (!email || !password) return res.status(400).json({ message: 'Email and password are required' });
+    if (users.find(u => u.email === email)) return res.status(409).json({ message: 'User already exists' });
     const hash = await bcrypt.hash(password, 10);
     users.push({ email, password: hash });
     console.log('User registered:', email);
-    res.json({ message: 'Регистрация успешна' });
+    res.json({ message: 'Registration successful' });
 });
 
-// Логин
 app.post('/login', async (req, res) => {
     const { email, password } = req.body;
     console.log('POST /login', { email });
     const user = users.find(u => u.email === email);
     if (!user) {
         console.log('User not found:', email);
-        return res.status(401).json({ message: 'Неверные email или пароль' });
+        return res.status(401).json({ message: 'Invalid email or password' });
     }
     const valid = await bcrypt.compare(password, user.password);
     if (!valid) {
         console.log('Invalid password for:', email);
-        return res.status(401).json({ message: 'Неверные email или пароль' });
+        return res.status(401).json({ message: 'Invalid email or password' });
     }
     const token = jwt.sign({ email }, JWT_SECRET, { expiresIn: '1d' });
     console.log('Login success, token issued for:', email);
     res.json({ token });
 });
 
-// Social login endpoint
 app.post('/login-social', (req, res) => {
     const { email } = req.body;
     console.log('POST /login-social', { email });
-    if (!email) return res.status(400).json({ message: 'Email обязателен' });
+    if (!email) return res.status(400).json({ message: 'Email is required' });
     let user = users.find(u => u.email === email);
     if (!user) {
         user = { email };
@@ -78,12 +73,11 @@ app.post('/login-social', (req, res) => {
     res.json({ token });
 });
 
-// Middleware для проверки JWT
 function authMiddleware(req, res, next) {
     const auth = req.headers.authorization;
     if (!auth) {
         console.log('No auth header');
-        return res.status(401).json({ message: 'Нет токена' });
+        return res.status(401).json({ message: 'No token provided' });
     }
     const token = auth.split(' ')[1];
     try {
@@ -92,31 +86,29 @@ function authMiddleware(req, res, next) {
         next();
     } catch (err) {
         console.log('Invalid token:', token, err);
-        return res.status(401).json({ message: 'Неверный токен' });
+        return res.status(401).json({ message: 'Invalid token' });
     }
 }
 
-// Получить блюда (требует авторизации)
 app.get('/dishes', authMiddleware, (req, res) => {
     console.log('GET /dishes for user:', req.user.email);
     const dishesWithUrl = dishes.map(dish => ({
         ...dish,
-        imageUrl: `${req.protocol}://${req.get('host')}/images/${dish.imageName}`
+        imageUrl: `https://${req.get('host')}/images/${dish.imageName}`
     }));
     res.json(dishesWithUrl);
 });
 
-// Получить блюдо по id (требует авторизации)
 app.get('/dishes/:id', authMiddleware, (req, res) => {
     const dish = dishes.find(d => d.id === Number(req.params.id));
     if (!dish) {
         console.log('Dish not found:', req.params.id);
-        return res.status(404).json({ message: 'Блюдо не найдено' });
+        return res.status(404).json({ message: 'Dish not found' });
     }
     console.log('GET /dishes/:id', req.params.id, 'for user:', req.user.email);
     res.json(dish);
 });
 
 app.listen(PORT, () => {
-    console.log(`Server running on http://192.168.0.241:${PORT}`);
+    console.log(`Server running on https://foodgen-backend.onrender.com:${PORT}`);
 }); setInterval(() => { }, 1000);
