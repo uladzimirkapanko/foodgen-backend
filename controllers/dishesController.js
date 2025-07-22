@@ -34,7 +34,7 @@ const getDishes = (req, res) => {
             description,
             recipe,
             ingredientsTranslated: translatedIngredients,
-            imageUrl: `http://${req.get('host')}/images/${dish.imageName}`,
+            imageUrl: `https://${req.get('host')}/images/${dish.imageName}`,
             videoUrl: dish.videoUrl
         };
     });
