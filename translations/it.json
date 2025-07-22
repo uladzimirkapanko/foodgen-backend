@@ -1,68 +1,162 @@
 {
-  "dishesList": {
-    "borsch": {
-      "name": "Borsch",
-      "description": "Zuppa tradizionale ucraina di barbabietole con sapore ricco e colore vibrante."
-    },
-    "plov": {
-      "name": "Plov",
-      "description": "Piatto di riso dell'Asia centrale con carne tenera e spezie aromatiche."
-    },
-    "olivier": {
-      "name": "Insalata Olivier",
-      "description": "Insalata russa classica con patate, verdure, uova e maionese."
-    },
-    "pasta": {
-      "name": "Pasta alla Carbonara",
-      "description": "Pasta italiana classica con uova, formaggio e pancetta."
-    },
-    "caesar": {
-      "name": "Insalata Cesare",
-      "description": "Lattuga romana fresca con condimento cremoso e crostini croccanti."
-    },
-    "puree": {
-      "name": "Purè di Verdure",
-      "description": "Purè di verdure cremoso e vellutato con erbe e spezie."
-    },
-    "chicken_potato": {
-      "name": "Pollo con Patate",
-      "description": "Petto di pollo tenero servito con patate arrostite ed erbe."
-    },
-    "buckwheat_veggies": {
-      "name": "Grano Saraceno con Verdure",
-      "description": "Grano saraceno nutriente con verdure saltate e spezie aromatiche."
-    }
-  },
-  "ingredients": {
-    "beet": "Barbabietola",
-    "cabbage": "Cavolo",
-    "potato": "Patata",
-    "carrot": "Carota",
-    "onion": "Cipolla",
-    "meat": "Carne",
-    "tomato_paste": "Concentrato di pomodoro",
-    "rice": "Riso",
-    "garlic": "Aglio",
-    "spices": "Spezie",
-    "eggs": "Uova",
-    "peas": "Piselli",
-    "sausage": "Salsiccia",
-    "cucumber": "Cetriolo",
-    "mayonnaise": "Maionese",
-    "tomato_sauce": "Salsa di pomodoro",
-    "cheese": "Formaggio",
-    "basil": "Basilico",
-    "chicken": "Pollo",
-    "lettuce": "Lattuga",
-    "croutons": "Crostini",
-    "parmesan": "Parmigiano",
-    "caesar_sauce": "Salsa Caesar",
-    "vegetables": "Verdure",
-    "cream": "Panna",
-    "salt": "Sale",
-    "pepper": "Pepe",
-    "oil": "Olio",
-    "buckwheat": "Grano saraceno",
-    "bell_pepper": "Peperone"
-  }
+	"dishesList": {
+		"borsch": {
+			"name": "Borsch",
+			"description": "Zuppa tradizionale ucraina di barbabietole con sapore ricco e colore vibrante."
+		},
+		"plov": {
+			"name": "Plov",
+			"description": "Piatto di riso dell'Asia centrale con carne tenera e spezie aromatiche."
+		},
+		"olivier": {
+			"name": "Insalata Olivier",
+			"description": "Insalata russa classica con patate, verdure, uova e maionese."
+		},
+		"pasta": {
+			"name": "Pasta alla Carbonara",
+			"description": "Pasta italiana classica con uova, formaggio e pancetta."
+		},
+		"caesar": {
+			"name": "Insalata Cesare",
+			"description": "Lattuga romana fresca con condimento cremoso e crostini croccanti."
+		},
+		"puree": {
+			"name": "Purè di Verdure",
+			"description": "Purè di verdure cremoso e vellutato con erbe e spezie."
+		},
+		"chicken_potato": {
+			"name": "Pollo con Patate",
+			"description": "Petto di pollo tenero servito con patate arrostite ed erbe."
+		},
+		"buckwheat_veggies": {
+			"name": "Grano Saraceno con Verdure",
+			"description": "Grano saraceno nutriente con verdure saltate e spezie aromatiche."
+		},
+		"sushi": { "name": "Sushi", "description": "Piatto tradizionale giapponese con riso, pesce e verdure." },
+		"ratatouille": {
+			"name": "Ratatouille",
+			"description": "Casseruola di verdure francese con melanzane, zucchine e pomodori."
+		},
+		"tacos": { "name": "Tacos", "description": "Piatto messicano con tortilla, carne e verdure." },
+		"paella": { "name": "Paella", "description": "Piatto spagnolo con riso, frutti di mare e verdure." },
+		"tom_yum": { "name": "Tom Yum", "description": "Zuppa tailandese piccante con gamberi e lime." },
+		"falafel": { "name": "Falafel", "description": "Polpette mediorientali di ceci ed erbe aromatiche." },
+		"ramen": { "name": "Ramen", "description": "Zuppa di noodles giapponese con carne e uovo." },
+		"moussaka": { "name": "Moussaka", "description": "Casseruola greca con melanzane, patate e carne macinata." },
+		"chili_con_carne": {
+			"name": "Chili con Carne",
+			"description": "Piatto messicano con carne, fagioli e peperoncino."
+		},
+		"croissant": { "name": "Croissant", "description": "Pasticceria francese a base di pasta sfoglia." },
+		"goulash": { "name": "Gulasch", "description": "Stufato ungherese con carne, verdure e paprika." },
+		"kimchi": { "name": "Kimchi", "description": "Cavolo fermentato coreano con condimento piccante." },
+		"samosa": { "name": "Samosa", "description": "Fagottino indiano con patate e verdure." },
+		"cheeseburger": { "name": "Cheeseburger", "description": "Hamburger americano con carne e formaggio." },
+		"caesar_salad": { "name": "Insalata Caesar", "description": "Insalata con pollo, crostini e salsa Caesar." },
+		"draniki": { "name": "Draniki", "description": "Frittelle di patate bielorusse." },
+		"pizza_margherita": {
+			"name": "Pizza Margherita",
+			"description": "Pizza italiana con pomodori, mozzarella e basilico."
+		},
+		"pelmeni": { "name": "Pelmeni", "description": "Ravioli russi con carne." },
+		"draniki_meat": { "name": "Draniki con carne", "description": "Frittelle di patate con carne macinata." },
+		"shashlik": { "name": "Shashlik", "description": "Spiedini di carne alla griglia." }
+	},
+	"ingredients": {
+		"beet": "Barbabietola",
+		"cabbage": "Cavolo",
+		"potato": "Patata",
+		"carrot": "Carota",
+		"onion": "Cipolla",
+		"meat": "Carne",
+		"tomato_paste": "Concentrato di pomodoro",
+		"rice": "Riso",
+		"garlic": "Aglio",
+		"spices": "Spezie",
+		"eggs": "Uova",
+		"peas": "Piselli",
+		"sausage": "Salsiccia",
+		"cucumber": "Cetriolo",
+		"mayonnaise": "Maionese",
+		"tomato_sauce": "Salsa di pomodoro",
+		"cheese": "Formaggio",
+		"basil": "Basilico",
+		"chicken": "Pollo",
+		"lettuce": "Lattuga",
+		"croutons": "Crostini",
+		"parmesan": "Parmigiano",
+		"caesar_sauce": "Salsa Caesar",
+		"vegetables": "Verdure",
+		"cream": "Panna",
+		"salt": "Sale",
+		"pepper": "Pepe",
+		"oil": "Olio",
+		"buckwheat": "Grano saraceno",
+		"bell_pepper": "Peperone",
+		"nori": "Nori",
+		"salmon": "Salmone",
+		"avocado": "Avocado",
+		"soy_sauce": "Salsa di soia",
+		"eggplant": "Melanzana",
+		"zucchini": "Zucchina",
+		"tortilla": "Tortilla",
+		"beef": "Manzo",
+		"salsa": "Salsa",
+		"seafood": "Frutti di mare",
+		"peas": "Piselli",
+		"saffron": "Zafferano",
+		"shrimp": "Gamberetti",
+		"lemongrass": "Citronella",
+		"lime": "Lime",
+		"mushroom": "Fungo",
+		"chili": "Peperoncino",
+		"coconut_milk": "Latte di cocco",
+		"chickpeas": "Ceci",
+		"parsley": "Prezzemolo",
+		"flour": "Farina",
+		"noodles": "Noodles",
+		"pork": "Maiale",
+		"green_onion": "Cipollotto",
+		"bechamel": "Besciamella",
+		"butter": "Burro",
+		"yeast": "Lievito",
+		"milk": "Latte",
+		"sugar": "Zucchero",
+		"radish": "Ravanello",
+		"ginger": "Zenzero",
+		"bun": "Panino",
+		"mozzarella": "Mozzarella",
+		"olive_oil": "Olio d'oliva",
+		"vinegar": "Aceto"
+	},
+	"units": {
+		"г": "g",
+		"кг": "kg",
+		"мл": "ml",
+		"л": "l",
+		"ст.л.": "cucchiaio",
+		"ч.л.": "cucchiaino",
+		"по вкусу": "a piacere",
+		"зубчик": "spicchio",
+		"шт.": "pz",
+		"пакетик": "bustina",
+		"кусочек": "pezzo",
+		"ломтик": "fetta",
+		"пучок": "mazzetto",
+		"стакан": "bicchiere",
+		"банка": "barattolo",
+		"веточка": "rametto",
+		"щепотка": "pizzico",
+		"порция": "porzione",
+		"1 зубчик": "1 spicchio",
+		"2 зубчика": "2 spicchi",
+		"1 шт.": "1 pz",
+		"1 пакетик": "1 bustina",
+		"1 пучок": "1 mazzetto",
+		"1 стакан": "1 bicchiere",
+		"1 банка": "1 barattolo",
+		"1 веточка": "1 rametto",
+		"1 щепотка": "1 pizzico",
+		"1 порция": "1 porzione"
+	}
 }

@@ -1,68 +1,270 @@
 {
-  "dishesList": {
-    "borsch": {
-      "name": "Bortsch",
-      "description": "Soupe traditionnelle ukrainienne aux betteraves avec une saveur riche et une couleur vibrante."
-    },
-    "plov": {
-      "name": "Plov",
-      "description": "Plat de riz d'Asie centrale avec viande tendre et épices aromatiques."
-    },
-    "olivier": {
-      "name": "Salade Olivier",
-      "description": "Salade russe classique avec pommes de terre, légumes, œufs et mayonnaise."
-    },
-    "pasta": {
-      "name": "Pâtes à la Carbonara",
-      "description": "Pâtes italiennes classiques avec œufs, fromage et pancetta."
-    },
-    "caesar": {
-      "name": "Salade César",
-      "description": "Laitue romaine fraîche avec vinaigrette crémeuse et croûtons croustillants."
-    },
-    "puree": {
-      "name": "Purée de Légumes",
-      "description": "Purée de légumes onctueuse et crémeuse avec herbes et épices."
-    },
-    "chicken_potato": {
-      "name": "Poulet aux Pommes de Terre",
-      "description": "Blanc de poulet tendre servi avec pommes de terre rôties et herbes."
-    },
-    "buckwheat_veggies": {
-      "name": "Sarrasin aux Légumes",
-      "description": "Sarrasin nutritif avec légumes sautés et épices aromatiques."
-    }
-  },
-  "ingredients": {
-    "beet": "Betterave",
-    "cabbage": "Chou",
-    "potato": "Pomme de terre",
-    "carrot": "Carotte",
-    "onion": "Oignon",
-    "meat": "Viande",
-    "tomato_paste": "Concentré de tomates",
-    "rice": "Riz",
-    "garlic": "Ail",
-    "spices": "Épices",
-    "eggs": "Œufs",
-    "peas": "Pois",
-    "sausage": "Saucisse",
-    "cucumber": "Concombre",
-    "mayonnaise": "Mayonnaise",
-    "tomato_sauce": "Sauce tomate",
-    "cheese": "Fromage",
-    "basil": "Basilic",
-    "chicken": "Poulet",
-    "lettuce": "Laitue",
-    "croutons": "Croûtons",
-    "parmesan": "Parmesan",
-    "caesar_sauce": "Sauce César",
-    "vegetables": "Légumes",
-    "cream": "Crème",
-    "salt": "Sel",
-    "pepper": "Poivre",
-    "oil": "Huile",
-    "buckwheat": "Sarrasin",
-    "bell_pepper": "Poivron"
-  }
+	"dishesList": {
+		"borsch": {
+			"name": "Bortsch",
+			"description": "Soupe traditionnelle ukrainienne aux betteraves avec une saveur riche et une couleur vibrante.",
+			"recipe": [
+				"Faire bouillir la viande jusqu'à tendreté, retirer et couper.",
+				"Ajouter les pommes de terre coupées dans le bouillon, cuire 10 minutes.",
+				"Ajouter le chou émincé, cuire encore 5 minutes.",
+				"Faire revenir les betteraves avec les carottes et les oignons, ajouter la pâte de tomate.",
+				"Ajouter les légumes sautés à la soupe, cuire 10 minutes.",
+				"Ajouter la viande, saler, poivrer, terminer la cuisson."
+			]
+		},
+		"plov": {
+			"name": "Plov",
+			"description": "Plat de riz d'Asie centrale avec viande tendre et épices aromatiques.",
+			"recipe": [
+				"Rincer soigneusement le riz.",
+				"Faire revenir la viande jusqu'à ce qu'elle soit dorée.",
+				"Ajouter les oignons et les carottes hachés, faire revenir.",
+				"Ajouter le riz, l'ail et les épices.",
+				"Ajouter de l'eau, couvrir et laisser mijoter jusqu'à cuisson du riz."
+			]
+		},
+		"olivier": {
+			"name": "Salade Olivier",
+			"description": "Salade russe classique avec pommes de terre, légumes, œufs et mayonnaise.",
+			"recipe": [
+				"Faire bouillir la viande jusqu'à tendreté, retirer et couper.",
+				"Ajouter les pommes de terre coupées dans le bouillon, cuire 10 minutes.",
+				"Ajouter le chou émincé, cuire encore 5 minutes.",
+				"Faire revenir les betteraves avec les carottes et les oignons, ajouter la pâte de tomate.",
+				"Ajouter les légumes sautés à la soupe, cuire 10 minutes.",
+				"Ajouter la viande, saler, poivrer, terminer la cuisson."
+			]
+		},
+		"pasta": {
+			"name": "Pâtes à la Carbonara",
+			"description": "Pâtes italiennes classiques avec œufs, fromage et pancetta.",
+			"recipe": [
+				"Faire bouillir la viande jusqu'à tendreté, retirer et couper.",
+				"Ajouter les pommes de terre coupées dans le bouillon, cuire 10 minutes.",
+				"Ajouter le chou émincé, cuire encore 5 minutes.",
+				"Faire revenir les betteraves avec les carottes et les oignons, ajouter la pâte de tomate.",
+				"Ajouter les légumes sautés à la soupe, cuire 10 minutes.",
+				"Ajouter la viande, saler, poivrer, terminer la cuisson."
+			]
+		},
+		"caesar": {
+			"name": "Salade César",
+			"description": "Laitue romaine fraîche avec vinaigrette crémeuse et croûtons croustillants.",
+			"recipe": [
+				"Faire bouillir la viande jusqu'à tendreté, retirer et couper.",
+				"Ajouter les pommes de terre coupées dans le bouillon, cuire 10 minutes.",
+				"Ajouter le chou émincé, cuire encore 5 minutes.",
+				"Faire revenir les betteraves avec les carottes et les oignons, ajouter la pâte de tomate.",
+				"Ajouter les légumes sautés à la soupe, cuire 10 minutes.",
+				"Ajouter la viande, saler, poivrer, terminer la cuisson."
+			]
+		},
+		"puree": {
+			"name": "Purée de Légumes",
+			"description": "Purée de légumes onctueuse et crémeuse avec herbes et épices.",
+			"recipe": [
+				"Faire bouillir la viande jusqu'à tendreté, retirer et couper.",
+				"Ajouter les pommes de terre coupées dans le bouillon, cuire 10 minutes.",
+				"Ajouter le chou émincé, cuire encore 5 minutes.",
+				"Faire revenir les betteraves avec les carottes et les oignons, ajouter la pâte de tomate.",
+				"Ajouter les légumes sautés à la soupe, cuire 10 minutes.",
+				"Ajouter la viande, saler, poivrer, terminer la cuisson."
+			]
+		},
+		"chicken_potato": {
+			"name": "Poulet aux Pommes de Terre",
+			"description": "Blanc de poulet tendre servi avec pommes de terre rôties et herbes.",
+			"recipe": [
+				"Faire bouillir la viande jusqu'à tendreté, retirer et couper.",
+				"Ajouter les pommes de terre coupées dans le bouillon, cuire 10 minutes.",
+				"Ajouter le chou émincé, cuire encore 5 minutes.",
+				"Faire revenir les betteraves avec les carottes et les oignons, ajouter la pâte de tomate.",
+				"Ajouter les légumes sautés à la soupe, cuire 10 minutes.",
+				"Ajouter la viande, saler, poivrer, terminer la cuisson."
+			]
+		},
+		"buckwheat_veggies": {
+			"name": "Sarrasin aux Légumes",
+			"description": "Sarrasin nutritif avec légumes sautés et épices aromatiques.",
+			"recipe": [
+				"Faire bouillir la viande jusqu'à tendreté, retirer et couper.",
+				"Ajouter les pommes de terre coupées dans le bouillon, cuire 10 minutes.",
+				"Ajouter le chou émincé, cuire encore 5 minutes.",
+				"Faire revenir les betteraves avec les carottes et les oignons, ajouter la pâte de tomate.",
+				"Ajouter les légumes sautés à la soupe, cuire 10 minutes.",
+				"Ajouter la viande, saler, poivrer, terminer la cuisson."
+			]
+		},
+		"sushi": { "name": "Sushi", "description": "Plat japonais traditionnel à base de riz, poisson et légumes." },
+		"ratatouille": {
+			"name": "Ratatouille",
+			"description": "Gratin de légumes français avec aubergine, courgette et tomates.",
+			"recipe": [
+				"Faire bouillir la viande jusqu'à tendreté, retirer et couper.",
+				"Ajouter les pommes de terre coupées dans le bouillon, cuire 10 minutes.",
+				"Ajouter le chou émincé, cuire encore 5 minutes.",
+				"Faire revenir les betteraves avec les carottes et les oignons, ajouter la pâte de tomate.",
+				"Ajouter les légumes sautés à la soupe, cuire 10 minutes.",
+				"Ajouter la viande, saler, poivrer, terminer la cuisson."
+			]
+		},
+		"tacos": { "name": "Tacos", "description": "Plat mexicain avec tortilla, viande et légumes." },
+		"paella": { "name": "Paëlla", "description": "Plat espagnol à base de riz, fruits de mer et légumes." },
+		"tom_yum": { "name": "Tom Yum", "description": "Soupe thaï épicée aux crevettes et citron vert." },
+		"falafel": { "name": "Falafel", "description": "Boulettes de pois chiches et herbes du Moyen-Orient." },
+		"ramen": { "name": "Ramen", "description": "Soupe de nouilles japonaise avec viande et œuf." },
+		"moussaka": {
+			"name": "Moussaka",
+			"description": "Gratin grec avec aubergines, pommes de terre et viande hachée.",
+			"recipe": [
+				"Faire bouillir la viande jusqu'à tendreté, retirer et couper.",
+				"Ajouter les pommes de terre coupées dans le bouillon, cuire 10 minutes.",
+				"Ajouter le chou émincé, cuire encore 5 minutes.",
+				"Faire revenir les betteraves avec les carottes et les oignons, ajouter la pâte de tomate.",
+				"Ajouter les légumes sautés à la soupe, cuire 10 minutes.",
+				"Ajouter la viande, saler, poivrer, terminer la cuisson."
+			]
+		},
+		"chili_con_carne": {
+			"name": "Chili con Carne",
+			"description": "Plat mexicain avec viande, haricots et piment.",
+			"recipe": [
+				"Faire bouillir la viande jusqu'à tendreté, retirer et couper.",
+				"Ajouter les pommes de terre coupées dans le bouillon, cuire 10 minutes.",
+				"Ajouter le chou émincé, cuire encore 5 minutes.",
+				"Faire revenir les betteraves avec les carottes et les oignons, ajouter la pâte de tomate.",
+				"Ajouter les légumes sautés à la soupe, cuire 10 minutes.",
+				"Ajouter la viande, saler, poivrer, terminer la cuisson."
+			]
+		},
+		"croissant": { "name": "Croissant", "description": "Viennoiserie française à base de pâte feuilletée." },
+		"goulash": { "name": "Goulash", "description": "Ragoût hongrois avec viande, légumes et paprika." },
+		"kimchi": { "name": "Kimchi", "description": "Chou fermenté coréen avec assaisonnement épicé." },
+		"samosa": { "name": "Samosa", "description": "Chausson indien avec pommes de terre et légumes." },
+		"cheeseburger": { "name": "Cheeseburger", "description": "Burger américain avec viande et fromage." },
+		"caesar_salad": { "name": "Salade César", "description": "Salade avec poulet, croûtons et sauce César." },
+		"draniki": { "name": "Draniki", "description": "Crêpes de pommes de terre biélorusses." },
+		"pizza_margherita": {
+			"name": "Pizza Margherita",
+			"description": "Pizza italienne avec tomates, mozzarella et basilic.",
+			"recipe": [
+				"Faire bouillir la viande jusqu'à tendreté, retirer et couper.",
+				"Ajouter les pommes de terre coupées dans le bouillon, cuire 10 minutes.",
+				"Ajouter le chou émincé, cuire encore 5 minutes.",
+				"Faire revenir les betteraves avec les carottes et les oignons, ajouter la pâte de tomate.",
+				"Ajouter les légumes sautés à la soupe, cuire 10 minutes.",
+				"Ajouter la viande, saler, poivrer, terminer la cuisson."
+			]
+		},
+		"pelmeni": { "name": "Pelmeni", "description": "Raviolis russes à la viande." },
+		"draniki_meat": {
+			"name": "Draniki à la viande",
+			"description": "Crêpes de pommes de terre avec viande hachée.",
+			"recipe": [
+				"Faire bouillir la viande jusqu'à tendreté, retirer et couper.",
+				"Ajouter les pommes de terre coupées dans le bouillon, cuire 10 minutes.",
+				"Ajouter le chou émincé, cuire encore 5 minutes.",
+				"Faire revenir les betteraves avec les carottes et les oignons, ajouter la pâte de tomate.",
+				"Ajouter les légumes sautés à la soupe, cuire 10 minutes.",
+				"Ajouter la viande, saler, poivrer, terminer la cuisson."
+			]
+		},
+		"shashlik": { "name": "Chachlik", "description": "Brochettes de viande grillée." }
+	},
+	"ingredients": {
+		"beet": "Betterave",
+		"cabbage": "Chou",
+		"potato": "Pomme de terre",
+		"carrot": "Carotte",
+		"onion": "Oignon",
+		"meat": "Viande",
+		"tomato_paste": "Concentré de tomates",
+		"rice": "Riz",
+		"garlic": "Ail",
+		"spices": "Épices",
+		"eggs": "Œufs",
+		"peas": "Pois",
+		"sausage": "Saucisse",
+		"cucumber": "Concombre",
+		"mayonnaise": "Mayonnaise",
+		"tomato_sauce": "Sauce tomate",
+		"cheese": "Fromage",
+		"basil": "Basilic",
+		"chicken": "Poulet",
+		"lettuce": "Laitue",
+		"croutons": "Croûtons",
+		"parmesan": "Parmesan",
+		"caesar_sauce": "Sauce César",
+		"vegetables": "Légumes",
+		"cream": "Crème",
+		"salt": "Sel",
+		"pepper": "Poivre",
+		"oil": "Huile",
+		"buckwheat": "Sarrasin",
+		"bell_pepper": "Poivron",
+		"nori": "Nori",
+		"salmon": "Saumon",
+		"avocado": "Avocat",
+		"soy_sauce": "Sauce soja",
+		"eggplant": "Aubergine",
+		"zucchini": "Courgette",
+		"tortilla": "Tortilla",
+		"beef": "Bœuf",
+		"salsa": "Salsa",
+		"seafood": "Fruits de mer",
+		"saffron": "Safran",
+		"shrimp": "Crevette",
+		"lemongrass": "Citronnelle",
+		"lime": "Citron vert",
+		"mushroom": "Champignon",
+		"chili": "Piment",
+		"coconut_milk": "Lait de coco",
+		"chickpeas": "Pois chiches",
+		"parsley": "Persil",
+		"flour": "Farine",
+		"noodles": "Nouilles",
+		"pork": "Porc",
+		"green_onion": "Oignon vert",
+		"bechamel": "Béchamel",
+		"butter": "Beurre",
+		"yeast": "Levure",
+		"milk": "Lait",
+		"sugar": "Sucre",
+		"radish": "Radis",
+		"ginger": "Gingembre",
+		"bun": "Pain à burger",
+		"mozzarella": "Mozzarella",
+		"olive_oil": "Huile d'olive",
+		"vinegar": "Vinaigre"
+	},
+	"units": {
+		"г": "g",
+		"кг": "kg",
+		"мл": "ml",
+		"л": "l",
+		"ст.л.": "cuil. à soupe",
+		"ч.л.": "cuil. à café",
+		"по вкусу": "selon le goût",
+		"зубчик": "gousse",
+		"шт.": "pcs",
+		"пакетик": "sachet",
+		"кусочек": "morceau",
+		"ломтик": "tranche",
+		"пучок": "botte",
+		"стакан": "verre",
+		"банка": "boîte",
+		"веточка": "brin",
+		"щепотка": "pincée",
+		"порция": "portion",
+		"1 зубчик": "1 gousse",
+		"2 зубчика": "2 gousses",
+		"1 шт.": "1 pcs",
+		"1 пакетик": "1 sachet",
+		"1 пучок": "1 botte",
+		"1 стакан": "1 verre",
+		"1 банка": "1 boîte",
+		"1 веточка": "1 brin",
+		"1 щепотка": "1 pincée",
+		"1 порция": "1 portion"
+	}
 }

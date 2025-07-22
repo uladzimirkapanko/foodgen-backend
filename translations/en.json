@@ -1,68 +1,262 @@
 {
-  "dishesList": {
-    "borsch": {
-      "name": "Borscht",
-      "description": "Traditional Ukrainian beet soup with rich flavor and vibrant color."
-    },
-    "plov": {
-      "name": "Plov",
-      "description": "Central Asian rice dish with tender meat and aromatic spices."
-    },
-    "olivier": {
-      "name": "Olivier Salad",
-      "description": "Classic Russian salad with potatoes, vegetables, eggs, and mayonnaise."
-    },
-    "pasta": {
-      "name": "Pasta Carbonara",
-      "description": "Classic Italian pasta with eggs, cheese, and pancetta."
-    },
-    "caesar": {
-      "name": "Caesar Salad",
-      "description": "Fresh romaine lettuce with creamy dressing and crispy croutons."
-    },
-    "puree": {
-      "name": "Vegetable Puree",
-      "description": "Smooth and creamy vegetable puree with herbs and spices."
-    },
-    "chicken_potato": {
-      "name": "Chicken with Potatoes",
-      "description": "Tender chicken breast served with roasted potatoes and herbs."
-    },
-    "buckwheat_veggies": {
-      "name": "Buckwheat with Vegetables",
-      "description": "Nutritious buckwheat with sautéed vegetables and aromatic spices."
-    }
-  },
-  "ingredients": {
-    "beet": "Beet",
-    "cabbage": "Cabbage",
-    "potato": "Potato",
-    "carrot": "Carrot",
-    "onion": "Onion",
-    "meat": "Meat",
-    "tomato_paste": "Tomato Paste",
-    "rice": "Rice",
-    "garlic": "Garlic",
-    "spices": "Spices",
-    "eggs": "Eggs",
-    "peas": "Peas",
-    "sausage": "Sausage",
-    "cucumber": "Cucumber",
-    "mayonnaise": "Mayonnaise",
-    "tomato_sauce": "Tomato Sauce",
-    "cheese": "Cheese",
-    "basil": "Basil",
-    "chicken": "Chicken",
-    "lettuce": "Lettuce",
-    "croutons": "Croutons",
-    "parmesan": "Parmesan",
-    "caesar_sauce": "Caesar Sauce",
-    "vegetables": "Vegetables",
-    "cream": "Cream",
-    "salt": "Salt",
-    "pepper": "Pepper",
-    "oil": "Oil",
-    "buckwheat": "Buckwheat",
-    "bell_pepper": "Bell Pepper"
-  }
+	"dishesList": {
+		"borsch": {
+			"name": "Borscht",
+			"description": "Traditional Ukrainian beet soup with meat and vegetables.",
+			"recipe": [
+				"Boil the meat until tender, remove and cut.",
+				"Add chopped potatoes to the broth, cook for 10 minutes.",
+				"Add shredded cabbage, cook for another 5 minutes.",
+				"Sauté beets with carrots and onions, add tomato paste.",
+				"Add the sautéed vegetables to the soup, cook for 10 minutes.",
+				"Add the meat, season with salt and pepper, finish cooking."
+			]
+		},
+		"plov": {
+			"name": "Plov",
+			"description": "Central Asian rice dish with tender meat and aromatic spices.",
+			"recipe": [
+				"Rinse the rice thoroughly.",
+				"Fry meat pieces until golden.",
+				"Add chopped onions and carrots, sauté.",
+				"Add rice, garlic, and spices.",
+				"Pour in water, cover, and simmer until rice is cooked."
+			]
+		},
+		"olivier": {
+			"name": "Olivier Salad",
+			"description": "Classic Russian salad with potatoes, vegetables, eggs, and mayonnaise.",
+			"recipe": [
+				"Chop all vegetables and meat.",
+				"Mix all ingredients in a large bowl.",
+				"Add mayonnaise and mix well."
+			]
+		},
+		"pasta": {
+			"name": "Pasta Carbonara",
+			"description": "Classic Italian pasta with eggs, cheese, and pancetta.",
+			"recipe": [
+				"Boil pasta.",
+				"Fry pancetta.",
+				"Beat eggs and mix with cheese.",
+				"Mix pasta, pancetta, and egg mixture."
+			]
+		},
+		"caesar": {
+			"name": "Caesar Salad",
+			"description": "Fresh romaine lettuce with creamy dressing and crispy croutons.",
+			"recipe": ["Chop romaine lettuce.", "Mix romaine with croutons.", "Mix dressing with romaine and croutons."]
+		},
+		"puree": {
+			"name": "Vegetable Puree",
+			"description": "Smooth and creamy vegetable puree with herbs and spices.",
+			"recipe": ["Boil vegetables.", "Blend vegetables until smooth.", "Add herbs and spices."]
+		},
+		"chicken_potato": {
+			"name": "Chicken with Potatoes",
+			"description": "Tender chicken breast served with roasted potatoes and herbs.",
+			"recipe": ["Roast chicken breast.", "Roast potatoes.", "Mix chicken and potatoes with herbs."]
+		},
+		"buckwheat_veggies": {
+			"name": "Buckwheat with Vegetables",
+			"description": "Nutritious buckwheat with sautéed vegetables and aromatic spices.",
+			"recipe": ["Sauté vegetables.", "Cook buckwheat.", "Mix buckwheat with vegetables and spices."]
+		},
+		"sushi": {
+			"name": "Sushi",
+			"description": "Traditional Japanese dish with rice, fish, and vegetables.",
+			"recipe": ["Cook rice.", "Add fish and vegetables to rice."]
+		},
+		"ratatouille": {
+			"name": "Ratatouille",
+			"description": "French vegetable casserole with eggplant, zucchini, and tomatoes.",
+			"recipe": ["Sauté eggplant and zucchini.", "Add tomatoes and spices.", "Cook until vegetables are tender."]
+		},
+		"tacos": {
+			"name": "Tacos",
+			"description": "Mexican dish with tortilla, meat, and vegetables.",
+			"recipe": ["Cook tortilla.", "Add meat and vegetables to tortilla."]
+		},
+		"paella": {
+			"name": "Paella",
+			"description": "Spanish dish with rice, seafood, and vegetables.",
+			"recipe": ["Cook rice.", "Add seafood and vegetables to rice."]
+		},
+		"tom_yum": {
+			"name": "Tom Yum",
+			"description": "Spicy Thai soup with shrimp and lime.",
+			"recipe": ["Cook shrimp.", "Add lime and spices."]
+		},
+		"falafel": {
+			"name": "Falafel",
+			"description": "Middle Eastern chickpea and herb balls.",
+			"recipe": ["Mix chickpeas, herbs, and spices.", "Form into balls.", "Fry until golden."]
+		},
+		"ramen": {
+			"name": "Ramen",
+			"description": "Japanese noodle soup with meat and egg.",
+			"recipe": ["Cook noodles.", "Add meat and egg to noodles."]
+		},
+		"moussaka": {
+			"name": "Moussaka",
+			"description": "Greek casserole with eggplant, potatoes, and minced meat.",
+			"recipe": ["Sauté eggplant and potatoes.", "Add minced meat and spices.", "Bake until tender."]
+		},
+		"chili_con_carne": {
+			"name": "Chili con Carne",
+			"description": "Mexican dish with meat, beans, and chili peppers.",
+			"recipe": ["Cook meat and beans.", "Add chili peppers and spices."]
+		},
+		"croissant": {
+			"name": "Croissant",
+			"description": "French pastry made from layered dough.",
+			"recipe": ["Mix dough ingredients.", "Roll out dough.", "Bake until golden."]
+		},
+		"goulash": {
+			"name": "Goulash",
+			"description": "Hungarian stew with meat, vegetables, and paprika.",
+			"recipe": ["Cook meat and vegetables.", "Add paprika and spices."]
+		},
+		"kimchi": {
+			"name": "Kimchi",
+			"description": "Korean fermented cabbage with spicy seasoning.",
+			"recipe": ["Mix cabbage and spices.", "Ferment for 2-3 days."]
+		},
+		"samosa": {
+			"name": "Samosa",
+			"description": "Indian pastry with potato and vegetables.",
+			"recipe": ["Mix potato and vegetables.", "Wrap in dough.", "Fry until golden."]
+		},
+		"cheeseburger": {
+			"name": "Cheeseburger",
+			"description": "American burger with meat and cheese.",
+			"recipe": ["Cook meat.", "Add cheese to burger.", "Cook until cheese is melted."]
+		},
+		"caesar_salad": {
+			"name": "Caesar Salad",
+			"description": "Salad with chicken, croutons, and Caesar dressing.",
+			"recipe": ["Chop romaine lettuce.", "Mix romaine with croutons.", "Mix dressing with romaine and croutons."]
+		},
+		"draniki": {
+			"name": "Draniki",
+			"description": "Belarusian potato pancakes.",
+			"recipe": ["Mix potato and flour.", "Add eggs and milk.", "Fry until golden."]
+		},
+		"pizza_margherita": {
+			"name": "Pizza Margherita",
+			"description": "Italian pizza with tomatoes, mozzarella, and basil.",
+			"recipe": ["Prepare pizza dough.", "Spread tomato sauce.", "Add mozzarella and basil."]
+		},
+		"pelmeni": {
+			"name": "Pelmeni",
+			"description": "Russian dumplings with meat.",
+			"recipe": ["Mix meat and vegetables.", "Wrap in dough.", "Boil until tender."]
+		},
+		"draniki_meat": {
+			"name": "Draniki with Meat",
+			"description": "Potato pancakes with minced meat.",
+			"recipe": ["Mix potato and flour.", "Add minced meat and eggs.", "Fry until golden."]
+		},
+		"shashlik": {
+			"name": "Shashlik",
+			"description": "Grilled meat skewers.",
+			"recipe": ["Prepare meat skewers.", "Grill until cooked."]
+		}
+	},
+	"ingredients": {
+		"beet": "Beet",
+		"cabbage": "Cabbage",
+		"potato": "Potato",
+		"carrot": "Carrot",
+		"onion": "Onion",
+		"meat": "Meat",
+		"tomato_paste": "Tomato Paste",
+		"rice": "Rice",
+		"garlic": "Garlic",
+		"spices": "Spices",
+		"eggs": "Eggs",
+		"sausage": "Sausage",
+		"cucumber": "Cucumber",
+		"mayonnaise": "Mayonnaise",
+		"tomato_sauce": "Tomato Sauce",
+		"cheese": "Cheese",
+		"basil": "Basil",
+		"chicken": "Chicken",
+		"lettuce": "Lettuce",
+		"croutons": "Croutons",
+		"parmesan": "Parmesan",
+		"caesar_sauce": "Caesar Sauce",
+		"vegetables": "Vegetables",
+		"cream": "Cream",
+		"salt": "Salt",
+		"pepper": "Pepper",
+		"oil": "Oil",
+		"buckwheat": "Buckwheat",
+		"bell_pepper": "Bell Pepper",
+		"nori": "Nori",
+		"salmon": "Salmon",
+		"avocado": "Avocado",
+		"soy_sauce": "Soy Sauce",
+		"eggplant": "Eggplant",
+		"zucchini": "Zucchini",
+		"tortilla": "Tortilla",
+		"beef": "Beef",
+		"salsa": "Salsa",
+		"seafood": "Seafood",
+		"peas": "Peas",
+		"saffron": "Saffron",
+		"shrimp": "Shrimp",
+		"lemongrass": "Lemongrass",
+		"lime": "Lime",
+		"mushroom": "Mushroom",
+		"chili": "Chili",
+		"coconut_milk": "Coconut Milk",
+		"chickpeas": "Chickpeas",
+		"parsley": "Parsley",
+		"flour": "Flour",
+		"noodles": "Noodles",
+		"pork": "Pork",
+		"green_onion": "Green Onion",
+		"bechamel": "Bechamel",
+		"butter": "Butter",
+		"yeast": "Yeast",
+		"milk": "Milk",
+		"sugar": "Sugar",
+		"radish": "Radish",
+		"ginger": "Ginger",
+		"bun": "Bun",
+		"mozzarella": "Mozzarella",
+		"olive_oil": "Olive Oil",
+		"vinegar": "Vinegar"
+	},
+	"units": {
+		"г": "g",
+		"кг": "kg",
+		"мл": "ml",
+		"л": "l",
+		"ст.л.": "tbsp",
+		"ч.л.": "tsp",
+		"по вкусу": "to taste",
+		"зубчик": "clove",
+		"шт.": "pcs",
+		"пакетик": "pack",
+		"кусочек": "piece",
+		"ломтик": "slice",
+		"пучок": "bunch",
+		"стакан": "glass",
+		"банка": "can",
+		"веточка": "sprig",
+		"щепотка": "pinch",
+		"порция": "portion",
+		"1 зубчик": "1 clove",
+		"2 зубчика": "2 cloves",
+		"1 шт.": "1 pcs",
+		"1 пакетик": "1 pack",
+		"1 пучок": "1 bunch",
+		"1 стакан": "1 glass",
+		"1 банка": "1 can",
+		"1 веточка": "1 sprig",
+		"1 щепотка": "1 pinch",
+		"1 порция": "1 portion"
+	}
 }
